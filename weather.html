@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+
+
+  <div class="conatiner">
+    <div class="title">
+      <h2>Weather App <i class="fa-solid fa-bolt"></i></h2>
+    </div>
+      <div class="search-bar"> 
+        <input type="Text" placeholder="Search your place "   id="search">
+        <button  id="btn"><i class="fa-solid fa-magnifying-glass"  style="color: gray;"></i></button>
+      </div>
+      <div class="dynamic">
+        <div class="cards"></div>
+        <div class="card loacation">
+
+          <div class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Sinpaore</span>
+          </div>
+  
+          <div class="time">
+          <span>Thus, 08 Nov</span>
+          </div>
+  
+        </div>
+        <main class="card">
+          <div class="image">
+          <img src="/sun.png" alt="">
+          </div>
+          <div class="condition">
+            <p>30 c</p>
+              <span>Clouds</span>
+          </div>
+        </main>
+        <div class=" card air">
+          <div class=" same humidity">
+  
+            <div class="humidity-control"> 
+               <i class="fa-solid fa-droplet"></i>
+              <span>Humidity</span>
+            </div>
+  
+             <span class="perc">74%</span>
+          </div>
+          <div class=" same wind">
+  
+            <div class="wind-controll">
+              <i class="fa-solid fa-wind"></i>
+              <span>Wind speed</span>
+            </div>
+  
+            <span class="perc"> 4.12 M/s</span>
+  
+  
+          </div>
+        </div>
+
+
+        <img src="/images-removebg-preview (1).png" alt="" id="not-found">
+
+        <img src="/ezgif-2-6d0b072c3d3f.gif" alt="" id="loader">
+
+
+      </div>
+
+  </div>
+
+
+
+
+
+  <script src="weather.js">
+  </script>
+  
+</body>
+</html>
